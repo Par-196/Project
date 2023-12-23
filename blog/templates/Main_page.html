@@ -2,24 +2,218 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title> Main page </title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/main_page.css' %}">
 </head>
 <body>
+
     <div class="head">
-
-        <h1> This is index template </h1>
-
-
+        <div class="head_content">
+            <div class="logo">
+                Techprod
+            </div>
+            <div class="search">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Введіть запит для пошуку">
+                    <button id="search-btn">Пошук</button>
+                </div>
+            </div>
+            <div class="ikon_case">
+                <object data="{% static 'img/User.png' %}" type="" class="ikon" ></object>
+                <object data="{% static 'img/Heart.png' %}" type="" class="ikon" ></object>
+                <object data="{% static 'img/Shopping_сart.png' %}" type="" class="ikon" ></object>
+            </div>
+        </div>
     </div>
 
-    <h2>
-        {% for items in items %}
-        <a href="/main_page/{{items.id}}/">
-            {{items.id}}  {{items.name}}  {{items.price}}  {{items.description}}  {{items.number}} <br/>
-        </a>
-        {% endfor %}
-    </h2>
+    <div class="emptiness"></div>
+
+    <div class="main_part">
+        <div class="items">
+            <div class="search_customization">
+                <h1 class="title">
+                    Смартфони, ТВ і Електроніка/Мобільні телефони
+                </h1>
+                <div class="select_case">
+                    <div class="custom-select">
+                        <span class="selected-option">Сортувати за:</span>
+                            <select>
+                                <option value="option1">Від дешевих до дорогих</option>
+                                <option value="option2">Від дорогих до дешевих</option>
+                                <option value="option3">Лідер продаж</option>
+                                <option value="option3">Новинки</option>
+                            </select>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="block_1">
+                <div class="Product_search_customization">
+                    <div class="custom-select">
+                        <span class="selected-option">Бренд:</span>
+                            <select>
+                                <option value="option1">Опція 1</option>
+                                <option value="option2">Опція 2</option>
+                                <option value="option3">Опція 3</option>
+                                <!-- Додайте інші опції за необхідністю -->
+                            </select>
+                    </div>
+                    <hr class="line">
+                    <div class="custom-select">
+                        <span class="selected-option">Ціна:</span>
+                            <select>
+                                <option value="option1">Опція 1</option>
+                                <option value="option2">Опція 2</option>
+                                <option value="option3">Опція 3</option>
+                                <!-- Додайте інші опції за необхідністю -->
+                            </select>
+                    </div>
+                    <hr class="line">
+                    <div class="custom-select">
+                        <span class="selected-option">Пам'ять:</span>
+                            <select>
+                                <option value="option1">Опція 1</option>
+                                <option value="option2">Опція 2</option>
+                                <option value="option3">Опція 3</option>
+                                <!-- Додайте інші опції за необхідністю -->
+                            </select>
+                    </div>
+                    <hr class="line">
+                    <div class="custom-select">
+                        <span class="selected-option">Розмір екрану:</span>
+                            <select>
+                                <option value="option1">Опція 1</option>
+                                <option value="option2">Опція 2</option>
+                                <option value="option3">Опція 3</option>
+                                <!-- Додайте інші опції за необхідністю -->
+                            </select>
+                    </div>
+                    <hr class="line">
+                    <div class="custom-select">
+                        <span class="selected-option">Операційна система:</span>
+                            <select>
+                                <option value="option1">Опція 1</option>
+                                <option value="option2">Опція 2</option>
+                                <option value="option3">Опція 3</option>
+                                <!-- Додайте інші опції за необхідністю -->
+                            </select>
+                    </div>
+                    <hr class="line">
+                    <div class="custom-select">
+                        <span class="selected-option">Колір:</span>
+                            <select>
+                                <option value="option1">Опція 1</option>
+                                <option value="option2">Опція 2</option>
+                                <option value="option3">Опція 3</option>
+                                <!-- Додайте інші опції за необхідністю -->
+                            </select>
+                    </div>
+                    <hr class="line">
+                    <div class="custom-select">
+                        <span class="selected-option">Продуктивність батареї:</span>
+                            <select>
+                                <option value="option1">Опція 1</option>
+                                <option value="option2">Опція 2</option>
+                                <option value="option3">Опція 3</option>
+                                <!-- Додайте інші опції за необхідністю -->
+                            </select>
+                    </div>
+                    <hr class="line">
+                    <div class="custom-select">
+                        <span class="selected-option">Захист:</span>
+                            <select>
+                                <option value="option1">Опція 1</option>
+                                <option value="option2">Опція 2</option>
+                                <option value="option3">Опція 3</option>
+                                <!-- Додайте інші опції за необхідністю -->
+                            </select>
+                    </div>
+                    <hr class="line">
+                    <div class="custom-select">
+                        <span class="selected-option">Технологія екрана:</span>
+                            <select>
+                                <option value="option1">Опція 1</option>
+                                <option value="option2">Опція 2</option>
+                                <option value="option3">Опція 3</option>
+                                <!-- Додайте інші опції за необхідністю -->
+                            </select>
+                    </div>
+                    <hr class="line">
+                    <div class="custom-select">
+                        <span class="selected-option">Тип трансмісії:</span>
+                            <select>
+                                <option value="option1">Опція 1</option>
+                                <option value="option2">Опція 2</option>
+                                <option value="option3">Опція 3</option>
+                                <!-- Додайте інші опції за необхідністю -->
+                            </select>
+                    </div>
+                    <hr class="line">
+                    <div class="custom-select">
+                        <span class="selected-option">Оцінка:</span>
+                            <select>
+                                <option value="option1">Опція 1</option>
+                                <option value="option2">Опція 2</option>
+                                <option value="option3">Опція 3</option>
+                                <!-- Додайте інші опції за необхідністю -->
+                            </select>
+                    </div>
+                    <hr class="line">
+                </div>
+
+
+
+
+
+
+
+
+                <div class="googs">
+
+
+                    <div class="box">
+
+
+
+
+
+
+                    </div>
+                    
+
+
+
+
+                    {% for items in items %}
+                        <a href="/main_page/{{items.id}}/" class="link">
+                            {{items.id}}  {{items.name}}  {{items.price}}  {{items.description}}  {{items.number}} <br/>
+                            <img src="{{items.image.url}}" alt="">
+                        </a>
+                    {% endfor %}
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+          </div>
+
+</div>
+
 </body>
 </html>
