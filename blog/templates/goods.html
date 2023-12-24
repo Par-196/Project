@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="{% static 'css/goods.css' %}">
 </head>
 <body>
-
-
     <div class="head">
         <div class="head_content">
             <div class="logo">
@@ -16,30 +14,26 @@
             </div>
             <div class="search">
                 <div class="search-container">
+                    <label for="search-input"></label>
                     <input type="text" id="search-input" placeholder="Введіть запит для пошуку">
                     <button id="search-btn">Пошук</button>
                 </div>
             </div>
-            <div class="ikon_case">
-                <object data="{% static 'img/User.png' %}" type="" class="ikon" ></object>
-                <object data="{% static 'img/Heart.png' %}" type="" class="ikon" ></object>
-                <object data="{% static 'img/Shopping_сart.png' %}" type="" class="ikon" ></object>
+            <div class="icons_case">
+                <object data="{% static 'img/User.png' %}" type="" class="icon" ></object>
+                <object data="{% static 'img/Heart.png' %}" type="" class="icon" ></object>
+                <object data="{% static 'img/Shopping_сart.png' %}" type="" class="icon" ></object>
             </div>
         </div>
     </div>
-
     <div class="emptiness"></div>
-
-
-    <div class="goods">
-
-        <img src="{{item.image.url}}" alt="">
-
-        <p>
-        This is your item  {{item.name}}  {{item.price}}  {{item.description}}  {{item.number}}
-        </p>
-
-
+    <div class="main_part">
+        <div class="goods">
+            <img src="{{item.image.url}}" alt="">
+            <p>
+                This is your item  {{item.name}}  {{item.price}}  {{item.description}}  {{item.number}}
+            </p>
+        </div>
     </div>
 
 

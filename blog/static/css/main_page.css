@@ -1,5 +1,10 @@
 body{
     margin: 0 0 0 0;
+    background-color:#F0F0F0;
+    font-family: Calibri ;
+}
+p{
+    margin: 0;
 }
 a{
     text-decoration: none;
@@ -29,7 +34,9 @@ a{
     width: 175px;
     height: 75px;
     font-family: Arial, serif;
-    font-size: 40px;
+    font-size: 75px;
+    font-weight: bold;
+    font-style: italic;
     color: #F00020;
     display: flex;
     justify-content: center;
@@ -78,14 +85,14 @@ a{
 }
 .main_part{
     width:100%;
-    height:2200px;
+    height:1950px;
     display: flex;
     justify-content: center;
     background-color:#F0F0F0;
 }
 .items{
     width: 1500px;
-    height: 2200px;
+    height: 1950px;
 }
 .search_customization{
     width: 1500px;
@@ -110,12 +117,12 @@ a{
 }
 .block_1{
     width:100%;
-    height: 2300px;;
+    height: 1800px;
     display: flex;
 }
 .Product_search_customization{
     width: 280px;
-    height: 100%;
+    height: 500px;
     margin: 6px 10px 0 0;
 }
 .custom-select {
@@ -175,6 +182,9 @@ select:focus {
     width: 360px;
     height: 160px;
 }
+.link{
+    color: #631db2;
+}
 .name{
     width: 344px;
     height: 80px;
@@ -191,33 +201,71 @@ select:focus {
     justify-content: left;
     margin: 0 18px 0 18px;
 }
-
-
-
-.link{
-    width: 0;
-    height: 0;
-    color: #1b1b1b;
+.footer{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.link:active {
-    color: #ffffff;
+.foot_case{
+    width: 1380px;
+    height: 500px;
+    padding: 0;
+    margin-top: 20px;
 }
-
-.rating {
-  font-size: 30px;
+.mailing_list{
+    width: 1380px;
+    height: 100px;
+    background-color: #FFFFFF;
+    padding: 20px;
 }
-
-
-.rating label {
-  float: right;
-  color: #ddd;
+.text{
+    width: 500px;
+    height: 50px;
+    font-size: 24px;
+    margin: 0;
 }
-
-.rating label:before {
-  content: '★';
-  color: #ffce00;
+.pl_input__field, .pl_input_wrapper__field {
+    width: 500px;
+    background-color: initial;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    color: #222;
+    height: 48px;
+    padding: 0 16px;
+    position: relative;
 }
-
-
-
-
+.button{
+    width: 120px;
+    height: 50px;
+    background-color: #F00020;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.button:hover {
+  background-color:#FFFFFF;
+  color: #F00020;
+}
+.foot_container{
+    width: 1380px;
+    height: 100px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+.footer_object{
+    width: 350px;
+    height: 75px;
+}
+.footer_img{
+    width: 1420px;
+    height: 500px;
+    margin-top: 20px;
+}
+.object-image{
+    width: 1420px;
+    height: 560px;
+}

@@ -1,5 +1,9 @@
 body{
-    margin: 0;
+    margin: 0 0 0 0;
+    background-color:#F0F0F0;
+}
+a{
+    text-decoration: none;
 }
 .emptiness{
     width: 100%;
@@ -8,7 +12,7 @@ body{
 .head {
     width: 100%;
     height: 75px;
-    background-color: #26337E;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +31,7 @@ body{
     height: 75px;
     font-family: Arial, serif;
     font-size: 40px;
-    color: #ebe8dc;
+    color: #F00020;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,40 +44,44 @@ body{
     align-items: center;
 }
 .search-container {
-  width: 940px;
-  height: 42px;
-  text-align: center;
+    width: 940px;
+    height: 42px;
+    text-align: center;
 }
 #search-input {
-  width: 800px;
-  padding: 10px;
-  font-size: 16px;
+    width: 800px;
+    padding: 10px;
+    font-size: 16px;
 }
 #search-btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #f04323 ;
-  color: #ebe8dc;
-  border: none;
-  cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #F00020;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
 }
 #search-btn:hover {
-  background-color: #ebe8dc;
-  color: #f04323;
+  background-color:#FFFFFF;
+  color: #F00020;
 }
-.ikon_case {
+.icons_case {
     width: 200px;
     height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ikon{
+.icon{
     width: 50px;
     height: 50px;
     margin: 10px;
 }
+.main_part{
+    width: 100%;
+    height: 2000px;
+}
 .goods{
     width: 100%;
-    height: 100px;
+    height: 1000px;
 }
