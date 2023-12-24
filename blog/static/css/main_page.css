@@ -1,6 +1,9 @@
 body{
     margin: 0 0 0 0;
 }
+a{
+    text-decoration: none;
+}
 .emptiness{
     width: 100%;
     height: 75px;
@@ -8,13 +11,12 @@ body{
 .head {
     width: 100%;
     height: 75px;
-    background-color: #26337E;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    z-index: 1;
-    margin-bottom: 20px;
+    z-index: 2;
 }
 .head_content{
     width: 1500px;
@@ -28,7 +30,7 @@ body{
     height: 75px;
     font-family: Arial, serif;
     font-size: 40px;
-    color: #ebe8dc;
+    color: #F00020;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,90 +43,91 @@ body{
     align-items: center;
 }
 .search-container {
-  width: 940px;
+    width: 940px;
     height: 42px;
-  text-align: center;
+    text-align: center;
 }
 #search-input {
-  width: 800px;
-  padding: 10px;
-  font-size: 16px;
+    width: 800px;
+    padding: 10px;
+    font-size: 16px;
 }
 #search-btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #f04323 ;
-  color: #ebe8dc;
-  border: none;
-  cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #F00020;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
 }
 #search-btn:hover {
-  background-color: #ebe8dc;
-  color: #f04323;
+  background-color:#FFFFFF;
+  color: #F00020;
 }
-.ikon_case {
+.icons_case {
     width: 200px;
     height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ikon{
+.icon{
     width: 50px;
     height: 50px;
     margin: 10px;
 }
 .main_part{
-    width: 100%;
-    height: 1700px;
+    width:100%;
+    height:2200px;
     display: flex;
     justify-content: center;
+    background-color:#F0F0F0;
 }
 .items{
-    width: 1300px;
-    height: 1100px;
+    width: 1500px;
+    height: 2200px;
 }
 .search_customization{
-    width: 1300px;
+    width: 1500px;
     height: 100px;
     display: flex;
+    margin: 20px 0 15px 0;
 }
 .title{
-    width: 820px;
+    width: 822px;
     font-size: 26px;
     margin: 0 0 0 0;
     padding: 29px;
+    background-color:#FFFFFF;
 }
 .select_case{
-    width: 280px;
+    width: 600px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 0 0 50px;
-}
-.line{
-    color: #353535;
-    margin: 0;
+    background-color:#FFFFFF;
 }
 .block_1{
-    width:1300px;
-    height:100%;
+    width:100%;
+    height: 2300px;;
     display: flex;
 }
 .Product_search_customization{
     width: 280px;
     height: 100%;
+    margin: 6px 10px 0 0;
 }
 .custom-select {
   position: relative;
+  border: 4px solid #F0F0F0;
 }
 .selected-option {
     width: 260px;
     display: block;
     padding: 10px;
     cursor: pointer;
-    background-color: #f0f0f0;
+    background-color: #FFFFFF;
 }
 select {
     appearance: none;
@@ -135,6 +138,7 @@ select {
     height: 100%;
     opacity: 0;
     cursor: pointer;
+    background-color: #FFFFFF;
 }
 select:focus + .selected-option {
     border: 2px solid #3498db;
@@ -142,20 +146,78 @@ select:focus + .selected-option {
 select:focus {
     outline: none;
 }
-
-.googs{
-    width: 1020px;
-    height: 100%;
+.googs {
+    width: 1200px;
+    height: 1800px;
+}
+.box{
+    width: 1200px;
+    height: 1800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    grid-template-rows:1fr 1fr 1fr ;
+    background-color: #FFFFFF;
+}
+.container{
+    width: 380px;
+    height: 580px;
+    border: 10px solid #F0F0F0;
+}
+.image_box{
+    width: 380px;
+    height: 400px;
+    display: flex;
+    align-content:center ;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+.description{
+    width: 360px;
+    height: 160px;
+}
+.name{
+    width: 344px;
+    height: 80px;
+    font-size: 22px;
+    display: flex;
+    justify-content: left;
+    margin: 20px 18px 0 18px;
+}
+.price{
+    width: 344px;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    justify-content: left;
+    margin: 0 18px 0 18px;
 }
 
 
 
-
-
-
 .link{
+    width: 0;
+    height: 0;
     color: #1b1b1b;
 }
 .link:active {
     color: #ffffff;
 }
+
+.rating {
+  font-size: 30px;
+}
+
+
+.rating label {
+  float: right;
+  color: #ddd;
+}
+
+.rating label:before {
+  content: '★';
+  color: #ffce00;
+}
+
+
+
+
