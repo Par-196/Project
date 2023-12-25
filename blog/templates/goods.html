@@ -10,7 +10,7 @@
     <div class="head">
         <div class="head_content">
             <div class="logo">
-                Techprod
+                Otto
             </div>
             <div class="search">
                 <div class="search-container">
@@ -29,16 +29,65 @@
     <div class="emptiness"></div>
     <div class="main_part">
         <div class="goods">
-            <img src="{{item.image.url}}" alt="">
-            <p>
-                This is your item  {{item.name}}  {{item.price}}  {{item.description}}  {{item.number}}
-            </p>
+             <div class="description">
+                 <a class="part_description">Домашня сторінка | мультимедіа | Смартфони | всі смартфони</a>
+                 <div class="name">
+                     {{item.name}}
+                 </div>
+                 <div class="grade">
+                     {{item.grade}}
+                 </div>
+             </div>
+            <div class="img_price">
+                <div class="image">
+                    <img src="{{item.image_site.url}}" alt="">
+                </div>
+                <div class="price_box">
+                    <div class="first_box">
+                        <object data="{% static 'img/first_box.png' %}" type="" class="first_box_image" ></object>
+                    </div>
+                    <div class="price">
+                        <div class="price_container">
+                            <div class="price_and_currency">
+                                {{item.price}} {{item.currency}}
+                            </div>
+                            <p class="VAT">з ПДВ, без вартості доставки</p>
+                            <p class="credit">Також є можливість взяти товар у кредит на 12 місяців</p>
+                        </div>
+                    </div>
+                    <div class="second_box">
+                        <object data="{% static 'img/second_box.png' %}" type="" class="second_box_image" ></object>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-
-
-
+    <div class="footer">
+        <div class="foot_case">
+            <div class="mailing_list">
+                <p class="text"> Підпишіться на розсилку та отримайте переваги </p>
+                <input placeholder="Ведіть свою пошту" class="pl_input__field">
+                <button class="button">Зареєструватись</button>
+            </div>
+            <div class="foot_container">
+                <div class="footer_object">
+                    <object data="{% static 'img/user.jpg' %}" type="" class="icon" ></object>
+                    <p>Мій рахунок</p>
+                </div>
+                <div class="footer_object">
+                    <object data="{% static 'img/gift.jpg' %}" type="" class="icon" ></object>
+                    <p>Подарункові ваучери</p>
+                </div>
+                <div class="footer_object">
+                    <object data="{% static 'img/chat.jpg' %}" type="" class="icon" ></object>
+                    <p>Мій рахунок</p>
+                </div>
+            </div>
+            <div class="footer_img">
+            <object data="{%static 'img/footer.png' %}" type="" class="object-image" ></object>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 

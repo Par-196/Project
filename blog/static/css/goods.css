@@ -1,6 +1,10 @@
 body{
     margin: 0 0 0 0;
     background-color:#F0F0F0;
+    font-family: Calibri ;
+}
+p{
+    margin: 0;
 }
 a{
     text-decoration: none;
@@ -30,7 +34,9 @@ a{
     width: 175px;
     height: 75px;
     font-family: Arial, serif;
-    font-size: 40px;
+    font-size: 75px;
+    font-weight: bold;
+    font-style: italic;
     color: #F00020;
     display: flex;
     justify-content: center;
@@ -77,11 +83,170 @@ a{
     height: 50px;
     margin: 10px;
 }
+
+
 .main_part{
     width: 100%;
-    height: 2000px;
+    height: 950px;
+    display: flex;
+    justify-content: center;
 }
 .goods{
+    width: 1100px;
+    height: 950px;
+}
+.description{
+    width: 1020px;
+    height: 80px;
+    padding: 20px;
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    background-color: #FFFFFF;
+}
+.part_description{
     width: 100%;
-    height: 1000px;
+    height: 20px;
+}
+.name{
+    width: 100%;
+    height: 40px;
+    font-size: 25px;
+}
+.grade{
+    width: 100%;
+    height: 20px;
+}
+.img_price{
+    width: 1060px;
+    height: 800px;
+    background-color: #F0F0F0;
+    display: flex;
+}
+.image{
+    width: 510px;
+    height: 700px;
+    padding: 50px;
+    background-color: #FFFFFF;
+}
+.price_box{
+    width: 450px;
+    height: 700px;
+    display: inline-block;
+}
+.first_box_image{
+    width: 440px;
+    height: 184px;
+    background-color: #FFFFFF;
+}
+.second_box_image{
+    width: 440px;
+    height: 380px;
+    background-color: #FFFFFF;
+}
+.first_box{
+    width: 440px;
+    height: 184px;
+    background-color: #FFFFFF;
+    margin: 0 0 0 10px;
+}
+.second_box{
+    width: 440px;
+    height: 380px;
+    background-color: #FFFFFF;
+    margin: 0 0 0 10px;
+}
+.price{
+    width: 440px;
+    height: 150px;
+    background-color: #F0F0F0;
+    margin: 0 0 68px 10px;
+}
+.price_container{
+    width: 400px;
+    height: 110px;
+    background-color: #F0F0F0;
+    margin: 20px;
+}
+.price_and_currency{
+    width: 100%;
+    height: 40px;
+    font-size:30px;
+}
+.VAT{
+    width: 100%;
+    height: 20px;
+    margin: 20px 0 70px 0;
+}
+.credit{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+}
+.footer{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot_case{
+    width: 1380px;
+    height: 500px;
+    padding: 0;
+    margin-top: 20px;
+}
+.mailing_list{
+    width: 1380px;
+    height: 100px;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+.text{
+    width: 500px;
+    height: 50px;
+    font-size: 24px;
+    margin: 0;
+}
+.pl_input__field, .pl_input_wrapper__field {
+    width: 500px;
+    background-color: initial;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    color: #222;
+    height: 48px;
+    padding: 0 16px;
+    position: relative;
+}
+.button{
+    width: 120px;
+    height: 50px;
+    background-color: #F00020;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.button:hover {
+  background-color:#FFFFFF;
+  color: #F00020;
+}
+.foot_container{
+    width: 1380px;
+    height: 100px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+.footer_object{
+    width: 350px;
+    height: 75px;
+}
+.footer_img{
+    width: 1420px;
+    height: 500px;
+    margin-top: 20px;
+}
+.object-image{
+    width: 1420px;
+    height: 560px;
 }

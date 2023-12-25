@@ -26,7 +26,9 @@ class Product(models.Model):
     description = models.CharField(max_length=300)
     number = models.IntegerField()
     image = models.ImageField(blank=True, upload_to='images')
+    image_site = models.ImageField(blank=True, upload_to='images')
     currency = models.CharField(max_length=1)
+    grade = models.CharField(max_length=5)
     def __str__(self):
         return self.name
 
